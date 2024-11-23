@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class MailService {
 
-  private apiUrl = 'http://email.trillion.co.ke/mail';
+  private apiUrl = 'https://email.trillion.co.ke/mail';
 
   constructor(private http: HttpClient) { }
 
@@ -25,7 +25,6 @@ export class MailService {
   }
 
   callMailService(request:MailRequest) :Observable<MailResponse>{
-    console.log(this.apiUrl)
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
     });
