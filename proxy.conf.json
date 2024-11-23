@@ -1,7 +1,0 @@
-{
-    "/mail": {
-      "target": "https://email.trillion.co.ke",
-      "secure": false,
-      "changeOrigin": true
-    }
-  }
